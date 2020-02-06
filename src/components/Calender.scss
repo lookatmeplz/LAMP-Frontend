@@ -1,9 +1,16 @@
 .Calender {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
     border: 1px black;
     border-radius: .5rem;
     box-shadow: 0 0 .3rem rgba(53, 53, 53, 0.25);
+    background-color: white;
 
     width: 25%;
+    min-width:20rem;
     margin: 0 auto;
     padding: .5rem 0;
     text-align: center;

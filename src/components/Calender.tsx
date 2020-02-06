@@ -35,7 +35,7 @@ class Calender extends React.Component<{}, CalenderState> {
   render() {
     return (
       <div className="Calender">
-        <h2>{this.state.date.getFullYear()}년 {this.state.date.getMonth()}월 {this.state.date.getDay()}일</h2>
+        <h2>{this.state.date.getFullYear()}년 {this.state.date.getMonth()+1}월 {this.state.date.getDate()}일</h2>
         <h4>{this.state.date.getHours()}시 {this.state.date.getMinutes()}분 {this.state.date.getSeconds()}초</h4>
       </div>
     );
