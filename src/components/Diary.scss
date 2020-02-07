@@ -1,0 +1,43 @@
+$diary-padding: 15px;
+$diary-margin: 25px;
+$diary-width: 28rem;
+$mid-line-width: 8rem;
+
+.Diary {
+  list-style: none;
+
+  border: 1px black;
+  border-radius: .5rem;
+  box-shadow: 0 0 .3rem rgba(53, 53, 53, 0.25);
+  background-color: white;
+
+  width: $diary-width;
+  margin: $diary-margin auto;
+  padding: $diary-padding 0;
+  text-align: center;
+
+  z-index: 1;
+
+  & > h2 {
+    margin-bottom: 2rem;
+  }
+
+  & > small {
+    display: block;
+    text-align: right;
+    margin-right: 3rem;
+  }
+
+  & > p {
+    text-align: left;
+    margin-left: 3rem;
+  }
+}
+
+.left {
+  transform: translateX(-$diary-width/2-$mid-line-width/2);
+}
+
+.right {
+  transform: translateX($diary-width/2+$mid-line-width/2);
+}
